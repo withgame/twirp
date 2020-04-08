@@ -1,4 +1,4 @@
-module module github.com/withgame/twirp
+module github.com/withgame/twirp
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
