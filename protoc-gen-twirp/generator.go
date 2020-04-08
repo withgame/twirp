@@ -26,15 +26,15 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bilibili/twirp/internal/gen"
-	"github.com/bilibili/twirp/internal/gen/stringutils"
-	"github.com/bilibili/twirp/internal/gen/typemap"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
 	"github.com/golang/protobuf/protoc-gen-go/generator"
 	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
 	"github.com/pkg/errors"
-	"github.com/pseudomuto/protokit"
+	"github.com/withgame/protokit"
+	"twirp/internal/gen"
+	"twirp/internal/gen/stringutils"
+	"twirp/internal/gen/typemap"
 )
 
 type twirp struct {
@@ -209,6 +209,11 @@ func (t *twirp) scanAllMessages(req *plugin.CodeGeneratorRequest) {
 	descriptors := protokit.ParseCodeGenRequest(req)
 
 	for _, d := range descriptors {
+		if len(d.GetImports()) > 0 {
+			for _, portD := range d.GetImports() {
+				t.scanMessages(portD.GetFile())
+			}
+		}
 		t.scanMessages(d)
 	}
 }

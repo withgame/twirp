@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package routeguide;
+
+import "common/commo.proto";
+
+service RouteGuide {
+    rpc RouteEmpty(common.Empty) returns (common.Empty) {}
+}
+
+message Empty {
+    int32 latitude2 = 1;
+    int32 longitude2 = 2;
+}
