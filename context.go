@@ -18,7 +18,7 @@ import (
 	"errors"
 	"net/http"
 
-	"twirp/internal/contextkeys"
+	"github.com/withgame/twirp/internal/contextkeys"
 	"github.com/golang/protobuf/proto"
 )
 

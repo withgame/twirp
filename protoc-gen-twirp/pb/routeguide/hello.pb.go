@@ -15,7 +15,7 @@ package routeguide
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import _ "twirp/protoc-gen-twirp/pb/common"
+import _ "github.com/withgame/twirp/protoc-gen-twirp/pb/common"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

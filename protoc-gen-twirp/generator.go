@@ -32,9 +32,9 @@ import (
 	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
 	"github.com/pkg/errors"
 	"github.com/withgame/protokit"
-	"twirp/internal/gen"
-	"twirp/internal/gen/stringutils"
-	"twirp/internal/gen/typemap"
+	"github.com/withgame/twirp/internal/gen"
+	"github.com/withgame/twirp/internal/gen/stringutils"
+	"github.com/withgame/twirp/internal/gen/typemap"
 )
 
 type twirp struct {

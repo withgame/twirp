@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"os"
 
-	"twirp/internal/gen"
+	"github.com/withgame/twirp/internal/gen"
 )
 
 func main() {

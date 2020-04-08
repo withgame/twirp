@@ -23,7 +23,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"twirp/internal/contextkeys"
+	"github.com/withgame/twirp/internal/contextkeys"
 	"github.com/golang/protobuf/proto"
 )
 

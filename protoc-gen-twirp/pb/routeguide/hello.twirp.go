@@ -22,7 +22,7 @@ import proto "github.com/golang/protobuf/proto"
 import twirp "github.com/bilibili/twirp"
 import ctxsetters "github.com/bilibili/twirp/ctxsetters"
 
-import common "twirp/protoc-gen-twirp/pb/common"
+import common "github.com/withgame/twirp/protoc-gen-twirp/pb/common"
 
 // Imports only used by utility functions:
 import io "io"
