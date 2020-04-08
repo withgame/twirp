@@ -53,7 +53,7 @@ import (
 
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
 	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
-	"github.com/bilibili/twirp/internal/gen/stringutils"
+	"twirp/internal/gen/stringutils"
 )
 
 // Each type we import as a protocol buffer (other than FileDescriptorProto) needs
